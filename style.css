@@ -1,0 +1,78 @@
+/* In general, use margins when you're adjusting the spacing of an element in relation to another element (i.e a div in relation to another div on the page), and padding when you're adjusting the look of an individual element (i.e the amount of pixels between the edge of a div and the text within it). */
+
+html {
+	/* Setting a base font size of 10px give us easier rem calculations
+	Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth */
+	font-size: 10px;
+	background-color: white;
+}
+
+/* em is relative to the font-size of its direct or nearest parent, rem is only relative to the html (root) font-size.*/
+
+/* in CSS, the more specific value overrides */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.6em;
+	line-height: 1.5;
+	text-align: center;
+	/* background color overrides parent's color */
+	background-color: #eee;
+	color: #333;
+	/* default margin: 8px */
+	margin: 30px 8px;
+	padding: 15px;
+}
+
+h1 {
+	font-size: 4rem;
+	margin: 10px 0 0 0;
+}
+
+h2 {
+	font-size: 2rem;
+	margin: 50px 0;
+}
+
+figure {
+	margin: 0px;
+	padding: 10px;
+	background-color: white;
+}
+
+img {
+	/* for an image to scale down if it has to, but never scale up to be larger than its original size add max width 100% and height auto*/
+	max-width: 100%;
+	height: auto;
+	/*to center an image, set left and right margin to auto, and set display: block (The display property sets whether an element is treated as a block or inline element and the layout used for its children; block - displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width)*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	margin: 15px 0 5px 0;
+}
+
+ul {
+	/* margin: 0 0 0 30px;
+	padding: 0; */
+	max-width: 550px;
+	text-align: left;
+	display: block;
+	margin: auto;
+	padding: auto auto auto 30px;
+	line-height: 1.7;
+}
+
+li {
+	margin: 10px 0px;
+}
+
+ul p {
+	margin: 40px 5px;
+	line-height: 1.4;
+}
+
+footer p {
+	font-size: 1.8rem;
+}
